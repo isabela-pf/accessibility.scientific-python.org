@@ -1,38 +1,44 @@
-Reference
-=========
+Image Descriptions
+==================
 
 How to use this document
 ------------------------
 
-This SPEC is divided into two sections: a high-level overview and a
-reference section.
+This section is divided into two sections: a high-level overview and a
+more specific reference section.
 
-The high level overview is divided into: \* Motivations and Barriers \*
-Scope \* Description of deliverables \* Implementation
-
-The `reference section <https://accessibility.scientific-python.org/>`__
-is similar to an API reference. Look at the Table of Contents to see if
-any section pertains to your project or current needs.
-
-| The reference sections of this document is divided into: \* Best
-  practices, main principles and style guide \* Guidelines for writing
-  alt-text by image type (graphs, logos, gifs, etc) \* Guidelines by
-  context (main website, documentation, blog posts, etc) \*
-  Project-specific needs
-| \* Frequently-Asked-Questions
+The high level overview of includes `Main Principles`__, `Style Guide`__, 
+and `Per-Project Guidelines`__. The reference section can be found under 
+`Reference`__ with sub-sections for recommendations by image trait. 
 
 Main Principles
 ---------------
-
-Transformable
-~~~~~~~~~~~~~
 
 Understanding the goals behind why we write alt text can be helpful in
 figuring out how to write appropriate descriptions and to navigate other
 recommendations in this document.
 
-On the most foundational level, alt text needs to be: - Transformable -
-Complete - Contextual - Formatted properly
+On the most foundational level, alt text needs to be: 
+* Transformable
+* Complete
+* Contextual
+* Formatted properly
+
+Transformable
+~~~~~~~~~~~~~
+
+The core motivation behind writing image descriptions is to ensure that 
+information can be conveyed in multiple forms so that it can be accessed by 
+all people regardless of what form they need. Text is the cornerstone of this 
+and similarprocesses because it can be the most straightforward to transform 
+into other communication styles (like audio, digital Braille, a different 
+language, or others).
+
+This doesn’t mean that text representations are the only way to make something 
+more accessible. In fact, having information in a variety of forms means more 
+chances to accommodate more people. For the sake of scoping this 
+recommendation, we will be discussing text exclusively.
+
 
 Complete
 ~~~~~~~~
@@ -92,10 +98,18 @@ it’s formatted in a way that someone can’t access it or doesn’t know how
 to find it. There are a few standard methods for web content that are
 reliable.
 
+Formatted Properly
+~~~~~~~~~~~~~~~~~~
+
+Having an image description won't help if it's formatted in a way that someone 
+can't access it or doesn't know how to find it. There are a few standard 
+methods for web content that are reliable.
+
+
 Alt text
 ^^^^^^^^
 
-Alt text is the most frequently used style of image descriptions.
+Alt text is the most frequently used style of image description on the internet.
 
 This is the best place to start for describing images or similar
 visualization content. It derives its name from the HTML ``alt`` element
@@ -148,7 +162,9 @@ prior section).
 For more information on the ``longdesc`` element, refer to `MDN’s
 longdesc
 documentation <https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/longDesc>`__.
-#### Empty attribute
+
+Empty attribute
+^^^^^^^^^^^^^^^
 
 For decorative images, meaning they either aren’t needed to understand
 content or are represented in full elsewhere, use an empty ``alt``
@@ -298,20 +314,3 @@ It is also best to \* Use gender-neutral language (unless a subject’s
 gender is known) \* Avoid describing physical features unless it is
 necessary for supporting the content \* Use general terms for a group of
 people rather than describing each individual
-
-By Context
-~~~~~~~~~~
-
-Main site
-^^^^^^^^^
-
-Mostly less info dense images. Logo. Some complex images. Maybe people.
-#### Documentation site Info dense images. Diagrams. Charts.
-Screenshots. Images of interfaces. Images of text. #### Community
-Meeting Notes ‘informal ‘ documentation, still valuable Images of text.
-Screenshots. Images of interfaces. #### Blog posts Blog posts are
-self-contained, so no matter the type of images aim for consitency and
-ensuring that no info is missing by breaking your own links.
-
-Notes
------
